@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+void showSum(int, int, int);
+
+int main()
+{
+    int value1, value2, value3;
+    cout << "We are gonna display a sum of three numbers:" << endl
+    << "Enter three values";
+    cin >> value1 >> value2 >> value3;
+    showSum(value1, value2, value3);
+    return 0;
+}
+
+void showSum(int a, int b, int c)
+{
+    cout << "sum is: " << (a+b+c) << endl;
+}
+
+
