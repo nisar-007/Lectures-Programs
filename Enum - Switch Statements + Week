@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+enum Week { MON, TUE, WED, THU, FRI, SAT, SUN};
+
+int main()
+{
+    int n;
+    cout << "enter any integer from 0 to 6 here:  ";
+    cin >> n;
+    
+    switch(n)
+    {
+        case MON:
+        cout << "It is MONDAY";
+        break;
+        case TUE:
+        cout << "It is TUESDAY";
+        break;
+        case WED:
+        cout << "It is WEDDAY";
+        break;
+        case THU:
+        cout << "It is THURSDAY";
+        break;
+        case FRI:
+        cout << "It is FRIDAY";
+        break;
+        case SAT:
+        cout << "It is SATURDAY";
+        break;
+        case SUN:
+        cout << "It is SUNDAY";
+        break;
+        default:
+        cout << "wrong input";
+    }
+
+    return 0;
+}
+
+
