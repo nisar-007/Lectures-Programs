@@ -1,0 +1,26 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+void pass_byValue(int); //prototype
+
+int main()
+{
+    int usr_num = 12; //main function
+    cout << "the value of number in main is: " << usr_num << endl;
+    
+    pass_byValue(usr_num); //fucntion call
+    
+    cout << "back to main function" << endl;
+    cout << "Oh no, I couldn't change it, it's still the same in main  " << usr_num <<endl;
+
+    return 0;
+}
+
+void pass_byValue(int myValue)
+{
+    cout << "the number after being passed by value is: " << myValue <<endl;
+    cout << "let's change it..." << endl;
+    myValue = 350;
+    cout << " the number is now: " << myValue << endl;
+}
+
