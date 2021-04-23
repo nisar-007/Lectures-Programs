@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+void defArg(int = 34 , double = 78.54, string = "Nisar");
+int main()
+{
+    defArg();
+    defArg(23);
+    defArg(123.87);
+    defArg(26, 908.45);
+    defArg(26, 78.00, "Amna");
+    return 0;
+}
+
+void defArg(int num1, double num2, string strname)
+{
+    cout << endl << "I am int: value is: " << num1
+    << "  I am dbl: value is: " << num2 << " and I am str: value is: " << strname;
+}
+
