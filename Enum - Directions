@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+enum direction { East = 44, West = 56, North, South} dir;
+
+int main()
+{
+    //direction dir;
+    dir = East;
+    cout << "Direction is " << dir << "\n";
+    dir = West;
+    cout << "Direction is " << dir << "\n";
+    dir = North;
+    cout << "Direction is " << dir << "\n";
+    dir = South;
+    cout << "Direction is " << dir << "\n";
+    return 0;
+}
+
