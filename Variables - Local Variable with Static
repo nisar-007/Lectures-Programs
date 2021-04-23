@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+void showStatic(); // function prototype
+int main()
+{
+    for (int x =0; x <6; x++)
+    { 
+        showStatic();
+    }
+    return 0;
+}
+
+void showStatic()
+{
+    static int num = 5; // static local variable
+    cout << "value of num is: " << num <<endl;
+    num++;
+}
+
