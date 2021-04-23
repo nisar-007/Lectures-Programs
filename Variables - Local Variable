@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+void FuncLocal();
+
+int main()
+{
+    int num = 10;
+    cout << "value of num is " << num << endl;
+    FuncLocal();
+    cout << "value of num is " <<  num << endl;
+
+    return 0;
+}
+
+void FuncLocal()
+{
+    int num = 90;
+    cout << "value of num in FuncLocal is " << num << endl;
+}
+
