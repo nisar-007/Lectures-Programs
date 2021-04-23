@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+void doubleNum(int &);
+int main()
+{
+    int value = 6;
+    cout << "in main value is: " << value << endl;
+    cout << "calling function..." << endl;
+    doubleNum(value);
+    cout << "value is now..." << value << endl;
+    return 0;
+}
+
+void doubleNum(int &refVar)
+{
+    refVar = 2 * refVar;
+    //ref *= 2; both are same
+}
