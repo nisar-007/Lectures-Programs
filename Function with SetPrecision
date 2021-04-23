@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+
+void displayPrecision1();
+void displayPrecision2();
+
+int main()
+{
+    displayPrecision1();
+    cout << "Let's have a look with fixed now:";
+    displayPrecision2();
+    return 0;
+}
+
+void displayPrecision1()
+{
+    double x;
+    x = 345/34;
+    cout << "value with 3 precision is: " << setprecision(3) << x << endl
+    << "value with precision 5 is: " << setprecision(5) << x <<endl;
+}
+
+void displayPrecision2()
+{
+    double x;
+    x = 345/34;
+    cout << "value with 3 precision is: " << setprecision(3) << fixed << x << endl
+    << "value with precision 5 is: " << setprecision(5) << fixed << x;
+}
