@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <iostream>
+#include <iomanip> //io manipulator
+using namespace std;
+
+enum Day {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY}; //enumerators
+
+int main()
+{
+    const int NUM_DAYS = 5; //constant value 
+    double sales[NUM_DAYS]; //array 
+    double total = 0.0; //accumulator 
+    int index; //loop counter
+    
+    for (index = MONDAY; index <= FRIDAY; index++)
+    {
+        cout << "Enter the sales for day: " 
+            << index << ": "; //cascading 
+        cin >> sales[index];
+    }
+    
+    for (index = MONDAY; index <= FRIDAY; index++)
+        total = sales[index] + total;
+        //total += sales[index];  shortcut
+    cout << "The total sales are $" << setprecision(5)
+        << total << endl;
+    cout << "The total sales are $" << total << endl;
+    cout << "The total sales are $" << setprecision(5)
+         << fixed << total << endl;
+
+return 0;
+}
