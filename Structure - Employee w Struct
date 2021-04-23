@@ -1,0 +1,35 @@
+
+#include <iostream>
+using namespace std;
+
+struct employee			//declare a structure
+{
+    int empID; 				//ID of an employee
+    string empName;		//name of an employee
+    string empDep;			//depart. of an employee
+};  
+
+int main()
+{
+	employee e1, e2; //define a structure variable
+    
+    employee e3 = { 103, "Zainab" , "Computer Science"};
+    
+	e1.empID = 101;	//give values to structure members
+	e1.empName = "Nisar";
+	e1.empDep = "Human Resources";
+	e2.empID = 102;	//give values to structure members
+	e2.empName = "Awais";
+	e2.empDep = "Sales Operations"; 
+	
+    cout << "Employee 1's name is: " << e1.empName << "\n";
+    cout << "Employee 1's ID is: " << e1.empID << "\n";
+    cout << "Employee 1's department is: " <<e1.empDep << "\n";
+    cout << "Employee 2's name is: " << e2.empName << "\n";
+    cout << "Employee 2's ID is: " << e2.empID << "\n";
+    cout << "Employee 2's department is: " <<e2.empDep << "\n";
+    cout << "Employee 3's name is: " << e3.empName << "\n";
+    cout << "Employee 3's ID is: " << e3.empID << "\n";
+    cout << "Employee 3's department is: " <<e3.empDep << "\n";
+    return 0;
+}
