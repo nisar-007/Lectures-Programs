@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <iostream>
+#include <iomanip> //remember this 
+using namespace std;
+
+inline double getRadius();     //function prototypes 
+inline double getSquare(double); //function will have a parameter
+int main()
+{
+    const double PI = 3.14159; //constant
+    double radius;
+    double area;
+    //double area2 = 5.0;
+    
+    //cout << "the area is " << area2 << endl ;
+    cout<< fixed << setprecision(3); //this will fix precision to FP
+    //cout << "the area is " << area2 << endl ;
+
+    cout <<"This program calculates the area of ";
+    cout << "a circle. \n";
+    radius = getRadius();
+    area = PI * getSquare(radius);
+    
+    cout << "   The area is " << area << endl;
+    return 0;
+}
+double getRadius()
+{
+    double rad;
+    
+    cout << "Enter the radius of the circle: ";
+    cin >> rad;
+    return rad;
+}
+
+double getSquare(double number)
+{
+    return number*number;
+}
+
