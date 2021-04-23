@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int emp1_ID = 203;
+    string emp1_Name = "Amna";
+    string emp1_Dep = "Computer Science";
+    
+    int emp2_ID = 204;
+    string emp2_Name = "Zainab";
+    string emp2_Dep= "Computer Science";
+    
+    cout << "ID of employee 1 is " << emp1_ID << "\n";
+    cout << "Name of employee 1 is " << emp1_Name << "\n";
+    cout << "dep of employee 1 is " << emp1_Dep << "\n";
+    
+     cout << "ID of employee 2 is " << emp2_ID << "\n";
+    cout << "Name of employee 2 is " << emp2_Name << "\n";
+    cout << "dep of employee 2 is " << emp2_Dep << "\n";
+    return 0;
+}
+
+
