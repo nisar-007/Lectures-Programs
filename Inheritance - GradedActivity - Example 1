@@ -1,0 +1,67 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+class GradedActivity
+{
+    private:
+    double score; //to hold numeric score
+    public: 
+    
+    //default constructor
+    GradedActivity()
+    { score = 0.0;}
+    
+    //constructor
+    GradedActivity(double s)
+    { score = s; }
+    
+    //function
+    void setScore(double s)
+    { score = s;}
+    
+    //accessor functions
+    double getScore() const
+    { return score; }
+    
+    char getLetterGrade() const;
+};
+
+char GradedActivity::getLetterGrade() const
+{
+    char letterGrade; // To hold the letter grade
+
+    if (score > 89)
+        letterGrade = 'A';
+    else if (score > 79)
+        letterGrade = 'B';
+    else if (score > 69)
+        letterGrade = 'C';
+    else if (score > 59)
+        letterGrade = 'D';
+    else
+        letterGrade = 'F';
+    
+    return letterGrade;
+}
+
+int main()
+{
+    double testScore; // To hold a test score
+
+    // Create a GradedActivity object for the test.
+    GradedActivity test;
+    
+    // Get a numeric test score from the user.
+    cout << "Enter your numeric test score: ";
+    cin >> testScore;
+    
+    // Store the numeric score in the test object.
+    test.setScore(testScore);
+    
+    // Display the letter grade for the test.
+    cout << "The grade for that test is "
+    << test.getLetterGrade() << endl;
+
+    return 0;
+}
