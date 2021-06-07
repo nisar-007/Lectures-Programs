@@ -12,10 +12,6 @@ class GradedActivity
     GradedActivity()
     { score = 0.0;}
     
-    //constructor
-    GradedActivity(double s)
-    { score = s; }
-    
     //function
     void setScore(double s)
     { score = s;}
