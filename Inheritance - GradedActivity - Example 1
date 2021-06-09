@@ -12,11 +12,15 @@ class GradedActivity
     GradedActivity()
     { score = 0.0;}
     
-    //function
+    // Constructor
+     GradedActivity(double s)
+      { score = s; }
+    
+    //Mutatoror Setter function
     void setScore(double s)
     { score = s;}
     
-    //accessor functions
+    //accessor or getter functions
     double getScore() const
     { return score; }
     
