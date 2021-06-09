@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+class Demo
+{
+    public:
+     Demo(); //constructor
+};
+    Demo::Demo()
+{
+    cout << "welcome to constructor!\n";
+}
+int main()
+{
+    Demo demoObject;
+    
+    cout<< "this program demonstrates object\n";
+    cout << "with a constructor\n";
+    return 0;
+}
+
