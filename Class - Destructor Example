@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+class Demo
+{
+    public:
+     Demo(); //constructor
+     ~Demo(); //destructor
+};
+    Demo::Demo()
+{
+    cout << "welcome to constructor!\n";
+}
+    Demo::~Demo()
+{
+    cout << "now destructor is running!";
+}
+int main()
+{
+    Demo demoObject;
+    
+    cout<< "this program demonstrates object\n";
+    cout << "with a constructor and a destructor\n";
+    return 0;
+}
+
